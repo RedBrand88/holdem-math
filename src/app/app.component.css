@@ -1,0 +1,39 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 598px;
+}
+
+.card {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 20px;
+  width: 20px;
+  margin: 2px 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  background-color: rgb(81, 81, 211);
+  color: #eee;
+  cursor: pointer;
+}
+
+.clicked {
+  background-color: rgb(81, 81, 211);
+  color: #eee;
+}
+
+.normal {
+  background-color: #fafafa;
+}
