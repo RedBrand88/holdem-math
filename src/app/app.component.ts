@@ -2,7 +2,7 @@ import { HandsService } from './hands.service';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-interface card {
+export interface Card {
   letter: string
   clicked: boolean
 }
@@ -14,7 +14,7 @@ interface card {
 })
 export class AppComponent implements OnInit{
   title = 'poker-math';
-  cards: card[][];
+  cards: Card[][];
   clicked = false;
   handsSelected = 0;
   totalHandsPossible = 169;

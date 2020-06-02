@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { Card } from './app.component';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HandsService {
-  getHands() {
+  getHands(): Card[][] {
     return [
       [
         { letter: 'AA', clicked: false },
